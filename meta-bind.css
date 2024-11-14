@@ -1,0 +1,5 @@
+.mb-input-wrapper.mb-input-type-number input[type='number'] {
+    background-color: var(--background-primary);
+	min-inline-size: 7ch;
+	field-sizing: content;
+}

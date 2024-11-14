@@ -1,0 +1,16 @@
+#cMenuToolbarModalBar {
+	margin: 0 1.5rem;
+	width: unset;
+}
+
+#cMenuToolbarModalBar button {
+	cursor: pointer !important;
+}
+
+#cMenuToolbarModalBar > button {
+	padding: 0.5rem !important;
+}
+
+#cMenuToolbarModalBar .subitem > button {
+	padding: 0.4rem !important;
+}

@@ -1,0 +1,328 @@
+body {
+	--td: #030a1495;
+    --image-border-color: #465164;
+    --image-border-width: 1px;
+    --image-border-padding: 8px;
+    --image-border-background: var(--td);
+}
+
+/*----Image Positions/Adjustments----*/
+body {
+    --micro: 70px;
+    --tiny: 100px;
+    --small: 200px;
+    --small-med: 300px;
+    --med-small: 400px;
+    --medium: 500px;
+    --med-tall: 600px;
+    --tall: 700px;
+}
+
+.popover.hover-popover {
+    --micro: 70px;
+    --tiny: 100px;
+    --small: 150px;
+    --small-med: 200px;
+    --med-small: 250px;
+    --medium: 300px;
+    --med-tall: 450px;
+    --tall: 500px;
+}
+
+/*----Mobile----*/
+@media (max-width: 500px) {
+    .theme-dark,
+    .theme-light {
+        /*Mobile Sizes*/
+        --radius: 0px;
+        --micro: 70px;
+        --tiny: 100px;
+        --small: 150px;
+        --small-med: 200px;
+        --med-small: 250px;
+        --medium: 300px;
+        --med-tall: 450px;
+        --tall: 500px;
+    }
+}
+/*-Image Sizing-*/
+/*Fit image within bounds WITHOUT stretching*/
+img:is([alt*='cover'], [alt*='cvr']),
+.image-embed:is([src*='#cover'], [src*='#cvr']),
+span.image-embed:is([src*='#cover'], [src*='#cvr']) img {
+    object-fit: cover;
+}
+
+img[alt][alt]:not([alt*='relative'])[alt*='hmicro'] {
+    height: var(--micro);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='htiny'] {
+    height: var(--tiny);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='hsmall'] {
+    height: var(--small);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='hs-med'] {
+    height: var(--small-med);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='hm-sm'] {
+    height: var(--med-small);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='hmed'] {
+    height: var(--medium);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='hm-tl'] {
+    height: var(--med-tall);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='htall'] {
+    height: var(--tall);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='hfull'] {
+    height: 100%;
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wmicro'] {
+    width: var(--micro);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wtiny'] {
+    width: var(--tiny);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wsmall'] {
+    width: var(--small);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='ws-med'] {
+    width: var(--small-med);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wm-sm'] {
+    width: var(--med-small);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wmed'] {
+    width: var(--medium);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wm-tl'] {
+    width: var(--med-tall);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wtall'] {
+    width: var(--tall);
+}
+img[alt][alt]:not([alt*='relative'])[alt*='wfull'] {
+    width: 100%;
+}
+
+.image-embed[alt][alt*='relative'],
+div:not(.image-embed) > img[alt][alt*='relative'] {
+    --micro: 10%;
+    --tiny: 20%;
+    --small: 30%;
+    --small-med: 40%;
+    --med-small: 50%;
+    --medium: 60%;
+    --med-tall: 70%;
+    --tall: 85%;
+}
+.image-embed[alt][alt*='relative'][alt*='wmicro'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='wmicro'] {
+    width: var(--micro);
+}
+.image-embed[alt][alt*='relative'][alt*='wtiny'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='wtiny'] {
+    width: var(--tiny);
+}
+.image-embed[alt][alt*='relative'][alt*='wsmall'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='wsmall'] {
+    width: var(--small);
+}
+.image-embed[alt][alt*='relative'][alt*='ws-med'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='ws-med'] {
+    width: var(--small-med);
+}
+.image-embed[alt][alt*='relative'][alt*='wm-sm'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='wm-sm'] {
+    width: var(--med-small);
+}
+.image-embed[alt][alt*='relative'][alt*='wmed'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='wmed'] {
+    width: var(--medium);
+}
+.image-embed[alt][alt*='relative'][alt*='wm-tl'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='wm-tl'] {
+    width: var(--med-tall);
+}
+.image-embed[alt][alt*='relative'][alt*='wtall'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='wtall'] {
+    width: var(--tall);
+}
+.image-embed[alt][alt*='relative'][alt*='hmicro'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='hmicro'] {
+    width: var(--micro);
+}
+.image-embed[alt][alt*='relative'][alt*='htiny'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='htiny'] {
+    width: var(--tiny);
+}
+.image-embed[alt][alt*='relative'][alt*='hsmall'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='hsmall'] {
+    width: var(--small);
+}
+.image-embed[alt][alt*='relative'][alt*='hs-med'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='hs-med'] {
+    width: var(--small-med);
+}
+.image-embed[alt][alt*='relative'][alt*='hm-sm'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='hm-sm'] {
+    width: var(--med-small);
+}
+.image-embed[alt][alt*='relative'][alt*='hmed'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='hmed'] {
+    width: var(--medium);
+}
+.image-embed[alt][alt*='relative'][alt*='hm-tl'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='hm-tl'] {
+    width: var(--med-tall);
+}
+.image-embed[alt][alt*='relative'][alt*='htall'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='htall'] {
+    width: var(--tall);
+}
+.image-embed[alt][alt*='relative'][alt*='hfull'],
+div:not(.image-embed) > img[alt][alt*='relative'][alt*='hfull'] {
+    width: 100%;
+}
+
+.image-embed[alt][alt*='relative'],
+div:not(.image-embed) > img[alt][alt*='relative'] {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*Height*/
+/*Image Locations*/
+/*Center Image*/
+.img-adj-center.img-adj-center img,
+img:is([alt*='ctr'], [alt*='center']) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-adj-center.img-adj-center .is-live-preview img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/*Left & Right*/
+.markdown-rendered img:is([alt*='left'], [alt*='locl']),
+.markdown-rendered img:is([src*='#left'], [src*='#locl']),
+.markdown-rendered .image-embed:is([alt*='left'], [alt*='locl']),
+.markdown-rendered .image-embed:is([src*='#left'], [src*='#locl']) {
+    float: left;
+    margin-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.markdown-rendered img:is([alt*='right'], [alt*='locr']),
+.markdown-rendered img:is([src*='#right'], [src*='#locr']),
+.markdown-rendered .image-embed:is([alt*='right'], [alt*='locr']),
+.markdown-rendered .image-embed:is([src*='#right'], [src*='#locr']) {
+    float: right;
+    margin-left: 2%;
+    margin-bottom: 0px;
+}
+
+/*--Image Position--*/
+img[alt*='p+'],
+.image-embed[src*='#p+'] img {
+    object-fit: cover;
+}
+
+/*Inner Image*/
+img[alt*='p+c'],
+.image-embed[src*='#p+c'] img {
+    object-position: center;
+}
+
+img[alt*='p+t'],
+.image-embed[src*='#p+t'] img {
+    object-position: top;
+}
+
+img[alt*='p+b'],
+.image-embed[src*='#p+b'] img {
+    object-position: bottom;
+}
+
+img[alt*='p+l'],
+.image-embed[src*='#p+l'] img {
+    object-position: left;
+}
+
+img[alt*='p+r'],
+.image-embed[src*='#p+r'] img {
+    object-position: right;
+}
+
+img[alt*='p+cl'],
+.image-embed[src*='#p+cl'] img {
+    object-position: 15%;
+}
+
+img[alt*='p+ccl'],
+.image-embed[src*='#p+ccl'] img {
+    object-position: 25%;
+}
+
+img[alt*='p+cr'],
+.image-embed[src*='#p+cr'] img {
+    object-position: 60%;
+}
+
+img[alt*='p+ccr'],
+.image-embed[src*='#p+ccr'] img {
+    object-position: 75%;
+}
+
+img[alt*='p+tc'],
+.image-embed[src*='#p+tc'] img {
+    object-position: 50% 10%;
+}
+
+img[alt*='p+tcc'],
+.image-embed[src*='#p+tcc'] img {
+    object-position: 50% 20%;
+}
+
+img[alt*='p+cct'],
+.image-embed[src*='#p+cct'] img {
+    object-position: 50% 30%;
+}
+
+img[alt*='p+ct'],
+.image-embed[src*='#p+ct'] img {
+    object-position: 50% 40%;
+}
+
+img[alt*='p+cb'],
+.image-embed[src*='#p+cb'] img {
+    object-position: 50% 60%;
+}
+
+img[alt*='p+ccb'],
+.image-embed[src*='#p+ccb'] img {
+    object-position: 50% 70%;
+}
+
+img[alt*='p+bc'],
+.image-embed[src*='#p+bc'] img {
+    object-position: 50% 80%;
+}
+
+img[alt*='p+bcc'],
+.image-embed[src*='#p+bcc'] img {
+    object-position: 50% 90%;
+}
+
+.my-class h1,
+.my-class .HyperMD-header-1 {
+	text-align: center !important;
+}
